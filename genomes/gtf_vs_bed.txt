@@ -1,0 +1,7 @@
+
+gtf: first base is 1, start and end positions are in the feature
+bed: first base is 0, start is in the feature, end is right after
+
+so, to convert from gtf to bed, we need:
+bed start = gtf start - 1
+bed end = gtf end
